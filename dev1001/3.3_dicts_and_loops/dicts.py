@@ -6,7 +6,7 @@ inventory = {
     "usb_c_hub": 35,
     "wireless_mouse": 50
 }
-print(f"Initial inventory: {inventory}")
+
 
 # Accessing an item's quantity
 item_to_check = "usb_c_hub"
@@ -38,3 +38,24 @@ print(f"All product names (keys): {list(inventory.keys())}")
 print(f"All quantities (values): {list(inventory.values())}")
 print(f"All inventory entries (items): {list(inventory.items())}")
 print("-" * 30 + "\n")
+
+
+#task i.
+inventory["webcam"] = 25
+inventory["usb_c_hub"] -= 3
+
+#task ii.
+product_prices = {"laptop_stand": 25, "usb_c_hub": 30, "ergonomic_keyboard": 75}
+print(f"task ii: {product_prices["laptop_stand"]}")
+
+product_to_check_safe = "webcam"
+price_safe = product_prices.get(product_to_check_safe, 0)
+print(f"Initial inventory: {inventory}")
+print(f"Quantity of {product_to_check_safe} (using .get()): {price_safe}")
+
+#task iii.
+product_prices["laptop_stand"] -= 12
+
+if "laptop_stand" in product_prices:
+    if product_prices["laptop_stand"] < 15:
+        print(f"alert low stock for laptop_stand! Current quantity: {product_prices['laptop_stand']}")

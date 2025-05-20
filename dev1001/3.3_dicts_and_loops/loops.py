@@ -40,3 +40,6 @@ print("Today's Tasks:")
 for index, task in enumerate(tasks_today):
     print(f"{index + 1}. {task}") # User-friendly 1-based indexing
 print("-" * 30 + "\n")
+
+
+print([x for x in range(11) if x % 2 == 1])

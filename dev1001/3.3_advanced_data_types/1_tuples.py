@@ -16,36 +16,36 @@ empty_tuple = ()
 print(f"Point: {point}")
 print(f"Color: {rgb_color}")
 
-"""
-# Accessing elements (Zero-indexed)
-print(f"X-coordinate: {point[0]}")
-print(f"Blue value: {rgb_color[2]}")
 
-# Common functions/methods
-print(f"Number of items in color tuple: {len(rgb_color)}")
-print(f"How many times 0 appears: {rgb_color.count(0)}")
-print(f"Index of 'Medium Magenta': {rgb_color.index('Medium Magenta')}")
+# # Accessing elements (Zero-indexed)
+# print(f"X-coordinate: {point[0]}")
+# print(f"Blue value: {rgb_color[2]}")
 
-# Tuple Unpacking
-r, g, b, name = rgb_color
-print(f"Unpacked Red: {r}, Green: {g}, Blue: {b}, Name: {name}")
+# # Common functions/methods
+# print(f"Number of items in color tuple: {len(rgb_color)}")
+# print(f"How many times 0 appears: {rgb_color.count(0)}")
+# print(f"Index of 'Medium Magenta': {rgb_color.index('Medium Magenta')}")
 
-# --- MODIFY ---
+# # Tuple Unpacking
+# r, g, b, name = rgb_color
+# print(f"Unpacked Red: {r}, Green: {g}, Blue: {b}, Name: {name}")
 
-point = (10, 20)
-# Trying to change an element -> Causes TypeError!
-# point[0] = 15 # This line will raise an error - uncomment to see
+# # --- MODIFY ---
 
-print(f"Original point: {point}")
+# point = (10, 20)
+# # Trying to change an element -> Causes TypeError!
+# # point[0] = 15 # This line will raise an error - uncomment to see
 
-# 'Modifying' often means creating a *new* tuple
-new_point = point + (30,) # Concatenation creates a new tuple
-#new_point = (*point, 30) # Same result using * to unpack point
-print(f"New point (original unchanged): {new_point}")
+# print(f"Original point: {point}")
 
-# Slicing also creates new tuples
-# Syntax: tuple_var[start_index:end_index]
-#           start_index is inclusive, end_index is exclusive.
-first_two_color_values = rgb_color[0:2]
-print(f"First two color values: {first_two_color_values}")
-"""
+# # 'Modifying' often means creating a *new* tuple
+# new_point = point + (30,) # Concatenation creates a new tuple
+# #new_point = (*point, 30) # Same result using * to unpack point
+# print(f"New point (original unchanged): {new_point}")
+
+# # Slicing also creates new tuples
+# # Syntax: tuple_var[start_index:end_index]
+# #           start_index is inclusive, end_index is exclusive.
+# first_two_color_values = rgb_color[0:2]
+# print(f"First two color values: {first_two_color_values}")
+

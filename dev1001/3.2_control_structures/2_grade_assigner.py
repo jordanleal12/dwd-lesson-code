@@ -1,27 +1,32 @@
 # --- USE: Grade Assigner ---
-score = 85 # Try 95, 72, 65, 40
-letter_grade = ""
-is_passing = score >= 60 # Simple pass/fail check
-has_honors = False
 
-print(f"Score: {score}")
+def score_function(score):
+    honors = False
+    if score >= 93:
+        grade = "A"
+        honors = True
+    elif score >= 87:
+        grade = "B+"
+    elif score >= 80:
+        grade = "B"
+    elif score >= 70:
+        grade = "C"
+    elif score >= 60:
+        grade = "D"
+    elif score < 60:
+        grade = "F"
+    else: 
+        grade = "Error in grading"
+    passing = False if grade == "F" else True
+    return honors, grade, passing
 
-if score >= 90 and is_passing: # Using 'and'
-    letter_grade = "A"
-    has_honors = True
-elif score >= 80 and is_passing:
-    letter_grade = "B"
-elif score >= 70 and is_passing:
-    letter_grade = "C"
-elif score >= 60 and is_passing: # is_passing is redundant here if score >= 60 implies passing
-    letter_grade = "D"
-elif not is_passing: # Using 'not'
-    letter_grade = "F"
-else: # Catch-all, though unlikely with current logic
-    letter_grade = "Error in grading"
+has_honors, letter_grade, is_passing = score_function(88)
 
 print(f"Letter Grade: {letter_grade}")
 if has_honors:
     print("Congratulations on achieving honors!")
 if not is_passing and letter_grade == "F": # Example of 'or' could be: if score < 0 or score > 100: print("Invalid score")
     print("Student needs to retake the course.")
+
+if letter_grade == "A" or letter_grade == "B+":
+    print("Eligible for scholarship consideration")

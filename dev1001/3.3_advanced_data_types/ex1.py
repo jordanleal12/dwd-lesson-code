@@ -11,3 +11,11 @@ student_record = (101, "Alice Wonderland", "Computer Science")
 # 3. Unpack the original student_record into three separate variables.
 # 4. Use the slice operator to extract the student name only.
 
+print(student_record[1])
+
+new_student_record = student_record + ("term three", )
+print(new_student_record)
+
+number, name, student_class = student_record
+
+print(student_record[1]) 
