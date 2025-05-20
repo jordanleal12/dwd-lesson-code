@@ -8,3 +8,16 @@
 # 5. Create two simple callbacks (e.g., add_them, multiply_them) and
 #       test perform_operation with both.
 
+def sum_fn(a, b):
+    """Returns sum of numbers"""
+    return a + b
+
+def multiply_fn(a, b):
+    "Returns multiplication of numbers"""
+    return a * b
+
+def perform_operation(a, b, math_cb):
+    """Takes two variables and runs them through a maths function"""
+    print(f"Result is: {math_cb(a, b)}")
+
+perform_operation(5, 6, multiply_fn)

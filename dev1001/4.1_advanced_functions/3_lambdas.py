@@ -28,5 +28,7 @@ process_interaction("Charlie", lambda person_name: f"What's up, {person_name}?")
 # MODIFY
 # 1. Convert the following function into a lambda
 # 2. Call process_interaction and pass the lambda to it
-def capitalize_string(s):
-    return s.capitalize()
+# def capitalize_string(s):
+#     return s.capitalize()
+capitalize_string = lambda string: string.capitalize() 
+process_interaction("huuhhhh", capitalize_string)
