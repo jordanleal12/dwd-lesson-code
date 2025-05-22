@@ -13,10 +13,10 @@ print(joke)
 
 # You can also try to get a joke in a specific language or category if supported
 # For pyjokes, it primarily offers English jokes, but some categories exist.
-# joke_neutral = pyjokes.get_joke(language='en', category='neutral')
-# print("\nHere's a neutral joke:")
-# print(joke_neutral)
+joke_neutral = pyjokes.get_joke(language='en', category='neutral')
+print("\nHere's a neutral joke:")
+print(joke_neutral)
 
-# joke_chuck = pyjokes.get_joke(language='en', category='chuck')
-# print("\nHere's a Chuck Norris joke:")
-# print(joke_chuck)
+joke_chuck = pyjokes.get_joke(language='en', category='chuck')
+print("\nHere's a Chuck Norris joke:")
+print(joke_chuck)

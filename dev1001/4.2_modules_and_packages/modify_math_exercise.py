@@ -16,27 +16,27 @@ import math
 # Task 2: Calculate circumference
 radius = 7
 # Your code here
-# circumference = ...
-# print(f"The circumference of a circle with radius {radius} is: {circumference:.2f}")
+circumference = 2 * math.pi * radius
+print(f"The circumference of a circle with radius {radius} is: {circumference:.2f}")
 
 # Task 3: Use math.ceil()
 number_to_ceil = 4.3
 # Your code here
-# ceiled_number = ...
-# print(f"Ceiling of {number_to_ceil} is: {ceiled_number}")
+ceiled_number = math.ceil(number_to_ceil)
+print(f"Ceiling of {number_to_ceil} is: {ceiled_number}")
 
 # Task 4: Use math.floor()
 number_to_floor = 4.8
 # Your code here
-# floored_number = ...
-# print(f"Floor of {number_to_floor} is: {floored_number}")
+floored_number = math.floor(number_to_floor)
+print(f"Floor of {number_to_floor} is: {floored_number}")
 
 # Task 5: Calculate 10 to the power of 4
 base = 10
 exponent = 4
 # Your code here
-# result_power = ...
-# print(f"{base} to the power of {exponent} is: {result_power}")
+result_power = math.pow(base, exponent)
+print(f"{base} to the power of {exponent} is: {result_power}")
 
 print("--- Modify Math Exercise Complete (Placeholder) ---") # To ensure it runs
 # Expected output (values will vary based on student implementation):

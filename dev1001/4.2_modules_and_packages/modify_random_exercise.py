@@ -14,21 +14,21 @@ import random
 # --- Your code for Task 1 (import) is implicitly here ---
 
 # Task 2: Create a list of colors
-# colors = [...]
-# print(f"My colors: {colors}")
+colors = ["red", "orange", "indigo", "green", "blue", "indigo", "violet"]
+print(f"My colors: {colors}")
 
 # Task 3: Pick a random color
-# chosen_color = ...
-# print(f"Randomly chosen color: {chosen_color}")
+chosen_color = random.choice(colors)
+print(f"Randomly chosen color: {chosen_color}")
 
 # Task 4: Simulate rolling a D20
-# d20_roll = ...
-# print(f"D20 roll: {d20_roll}")
+d20_roll = random.randint(1, 20)
+print(f"D20 roll: {d20_roll}")
 
 # Task 5: Pick 2 unique names using random.sample()
-# friends = [...]
-# sampled_friends = ...
-# print(f"Sampled friends: {sampled_friends}")
+friends = ["brad", "sarah", "joel", "lauren", "angus", "sofi"]
+sampled_friends = random.sample(friends, 2)
+print(f"Sampled friends: {sampled_friends}")
 
 print("--- Modify Random Exercise Complete (Placeholder) ---")
 # Expected output (will vary due to randomness):
